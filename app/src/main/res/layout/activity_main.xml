@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- Top Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateIds,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sok_sao"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <!-- Cover Picture -->
+    <ImageView
+        android:id="@+id/coverPicture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_picture"
+        app:layout_constraintTop_toBottomOf="@id/navigationBar"
+        android:contentDescription="@string/cover_picture" />
+
+    <!-- Profile Picture -->
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="60dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="160dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:strokeWidth="2dp"
+        app:strokeColor="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_picture"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/sok_sao"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="280dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="3.2K"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="friends"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Love travelling"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/textViewEditProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:minWidth="160dp"
+        android:text="@string/edit"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/textViewAddToStory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:minWidth="160dp"
+        android:text="@string/story"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+
+    <!-- Other content of profile -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Facebook_Profile</string>
+    <string name="profile">Profile</string>
+    <string name="add_to_story">Add to Story</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="story">Add to Story</string>
+    <string name="edit">Edit Profile</string>
+    <string name="user_profile">Profile</string>
+    <string name="back">Back</string>
+    <string name="cover_picture">CoverImage</string>
+    <string name="sok_sao">Sok Sao</string>
+</resources>
